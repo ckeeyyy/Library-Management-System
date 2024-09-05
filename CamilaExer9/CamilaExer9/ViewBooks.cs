@@ -35,25 +35,32 @@ namespace CamilaExer9
 
         private void dataGridViewBooks_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridViewBooks.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            try
             {
-                isbn = Int64.Parse(dataGridViewBooks.Rows[e.RowIndex].Cells[3].Value.ToString());
+                if (dataGridViewBooks.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+                {
+                    isbn = Int64.Parse(dataGridViewBooks.Rows[e.RowIndex].Cells[3].Value.ToString());
+                }
+                panel2.Visible = true;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = "data source = LAPTOP-7DELVKGD\\SQLEXPRESS; database = LibraryManagement;integrated security=True";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+
+                cmd.CommandText = "Select * from NewBook where bISBN=" + isbn + "";
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+
+                txtVbTitle.Text = ds.Tables[0].Rows[0][1].ToString();
+                txtVbAuthor.Text = ds.Tables[0].Rows[0][2].ToString();
+                txtVbISBN.Text = ds.Tables[0].Rows[0][3].ToString(); // ISBN is already read-only
+                txtVbQuantity.Text = ds.Tables[0].Rows[0][4].ToString();
             }
-            panel2.Visible = true;
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = LAPTOP-7DELVKGD\\SQLEXPRESS; database = LibraryManagement;integrated security=True";
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-
-            cmd.CommandText = "Select * from NewBook where bISBN=" + isbn + "";
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-
-            txtVbTitle.Text = ds.Tables[0].Rows[0][1].ToString();
-            txtVbAuthor.Text = ds.Tables[0].Rows[0][2].ToString();
-            txtVbISBN.Text = ds.Tables[0].Rows[0][3].ToString(); // ISBN is already read-only
-            txtVbQuantity.Text = ds.Tables[0].Rows[0][4].ToString();
+            catch (Exception ex)
+            {
+                return;
+            }
         }
 
         private void btnVbCancel_Click(object sender, EventArgs e)
@@ -70,11 +77,13 @@ namespace CamilaExer9
 
             if (txtVbBook.Text != "")
             {
-                cmd.CommandText = "Select * from NewBook where bTitle LIKE '" + txtVbBook.Text + "%'";
+                cmd.CommandText = "Select * from NewBook Where bTitle LIKE @BookTitle OR bISBN LIKE @BookISBN ;";
+                cmd.Parameters.AddWithValue("@BookTitle", "%" + txtVbBook.Text + "%");
+                cmd.Parameters.AddWithValue("@BookISBN", "%" + txtVbBook.Text + "%");
             }
             else
             {
-                cmd.CommandText = "Select * from NewBook";
+                cmd.CommandText = "Select * from NewBook;";
             }
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();

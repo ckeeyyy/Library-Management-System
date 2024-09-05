@@ -26,33 +26,44 @@ namespace CamilaExer9
         {
             while (!backgroundWorker1.CancellationPending)
             {
-                // Fetch overdue books since last checked date
-                string sql = "SELECT * FROM CRBook WHERE bk_return_date is NULL AND due_date <= @lastCheckedDate ;";
-                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                try
                 {
-                    connection.Open();
-                    using (SqlCommand cmd = new SqlCommand(sql, connection))
-                    {
-                        cmd.Parameters.AddWithValue("@lastCheckedDate", DateTime.Now.ToString("yyyy-MM-dd"));
+                    // Count overdue books
+                    string sql = "SELECT COUNT(*) FROM CRBook WHERE due_date < @currentDate AND bk_return_date IS NULL;";
 
-                        using (SqlDataReader reader = cmd.ExecuteReader())
+                    using (SqlConnection connection = new SqlConnection(ConnectionString))
+                    {
+                        connection.Open();
+                        using (SqlCommand cmd = new SqlCommand(sql, connection))
                         {
-                            while (reader.Read())
+                            // Use DateTime.Today without converting to string to ensure proper SQL data type
+                            cmd.Parameters.AddWithValue("@currentDate", DateTime.Today.Date);
+
+                            int overdueCount = (int)cmd.ExecuteScalar(); // Get the count of overdue books
+
+                            if (overdueCount > 0)
                             {
-                                // Notify user about overdue book
-                                string bookName = reader["bk_title"].ToString();
-                                string checkedName = reader["pt_name"].ToString();
-                                ShowNotification($"Book '{bookName}' is overdue!" +
-                                                 $" Checkouted by {checkedName}");
+                                string message = $"{overdueCount} book(s) are overdue!";
+
+                                // Safely interact with UI
+                                this.Invoke(new Action(() =>
+                                {
+                                    ShowNotification(message); // Show count notification
+                                }));
                             }
                         }
-
-
                     }
-
+                }
+                catch (Exception ex)
+                {
+                    // Log or handle the error as needed
+                    this.Invoke(new Action(() =>
+                    {
+                        MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }));
                 }
 
-                Thread.Sleep(3600000); //Checks every Hour
+                Thread.Sleep(3600000); // Checks every hour
             }
         }
 

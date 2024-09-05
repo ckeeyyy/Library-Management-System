@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,6 +37,8 @@
             this.txtCbMemId = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtCbISBN = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,12 +51,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtCbName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtCbISBN = new System.Windows.Forms.TextBox();
+            this.libraryManagementDataSet9 = new CamilaExer9.LibraryManagementDataSet9();
+            this.newBookBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.newBookTableAdapter = new CamilaExer9.LibraryManagementDataSet9TableAdapters.NewBookTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newBookBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -153,6 +159,25 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(493, 320);
             this.panel3.TabIndex = 2;
+            // 
+            // txtCbISBN
+            // 
+            this.txtCbISBN.Location = new System.Drawing.Point(198, 151);
+            this.txtCbISBN.Name = "txtCbISBN";
+            this.txtCbISBN.ReadOnly = true;
+            this.txtCbISBN.Size = new System.Drawing.Size(255, 22);
+            this.txtCbISBN.TabIndex = 16;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tw Cen MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(25)))), ((int)(((byte)(39)))));
+            this.label9.Location = new System.Drawing.Point(38, 147);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(61, 27);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "ISBN:";
             // 
             // dateTimePicker2
             // 
@@ -274,24 +299,19 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Name:";
             // 
-            // label9
+            // libraryManagementDataSet9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tw Cen MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(25)))), ((int)(((byte)(39)))));
-            this.label9.Location = new System.Drawing.Point(38, 147);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(61, 27);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "ISBN:";
+            this.libraryManagementDataSet9.DataSetName = "LibraryManagementDataSet9";
+            this.libraryManagementDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // txtCbISBN
+            // newBookBindingSource
             // 
-            this.txtCbISBN.Location = new System.Drawing.Point(198, 151);
-            this.txtCbISBN.Name = "txtCbISBN";
-            this.txtCbISBN.ReadOnly = true;
-            this.txtCbISBN.Size = new System.Drawing.Size(255, 22);
-            this.txtCbISBN.TabIndex = 16;
+            this.newBookBindingSource.DataMember = "NewBook";
+            this.newBookBindingSource.DataSource = this.libraryManagementDataSet9;
+            // 
+            // newBookTableAdapter
+            // 
+            this.newBookTableAdapter.ClearBeforeFill = true;
             // 
             // CheckOutBooks
             // 
@@ -313,6 +333,8 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newBookBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -341,5 +363,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtCbISBN;
+        private LibraryManagementDataSet9 libraryManagementDataSet9;
+        private System.Windows.Forms.BindingSource newBookBindingSource;
+        private LibraryManagementDataSet9TableAdapters.NewBookTableAdapter newBookTableAdapter;
     }
 }

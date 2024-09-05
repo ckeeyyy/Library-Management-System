@@ -44,13 +44,15 @@
             this.due_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bkreturndateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bk_is_overdue = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.cRBookBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.libraryManagementDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.libraryManagementDataSet = new CamilaExer9.LibraryManagementDataSet();
+            this.cRBookBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.libraryManagementDataSet6 = new CamilaExer9.LibraryManagementDataSet6();
             this.cRBookBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.libraryManagementDataSet4 = new CamilaExer9.LibraryManagementDataSet4();
             this.cRBookBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.libraryManagementDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.libraryManagementDataSet = new CamilaExer9.LibraryManagementDataSet();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtRbDueDate = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnRbCancel = new System.Windows.Forms.Button();
             this.btnRbReturn = new System.Windows.Forms.Button();
@@ -67,24 +69,25 @@
             this.cRBookBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.cRBookTableAdapter1 = new CamilaExer9.LibraryManagementDataSet3TableAdapters.CRBookTableAdapter();
             this.cRBookTableAdapter2 = new CamilaExer9.LibraryManagementDataSet4TableAdapters.CRBookTableAdapter();
-            this.libraryManagementDataSet6 = new CamilaExer9.LibraryManagementDataSet6();
-            this.cRBookBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.cRBookTableAdapter3 = new CamilaExer9.LibraryManagementDataSet6TableAdapters.CRBookTableAdapter();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBooks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSetBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -153,6 +156,8 @@
             // 
             // dataGridViewBooks
             // 
+            this.dataGridViewBooks.AllowUserToAddRows = false;
+            this.dataGridViewBooks.AllowUserToDeleteRows = false;
             this.dataGridViewBooks.AutoGenerateColumns = false;
             this.dataGridViewBooks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -165,9 +170,10 @@
             this.due_date,
             this.bkreturndateDataGridViewTextBoxColumn,
             this.bk_is_overdue});
-            this.dataGridViewBooks.DataSource = this.cRBookBindingSource4;
+            this.dataGridViewBooks.DataSource = this.cRBookBindingSource5;
             this.dataGridViewBooks.Location = new System.Drawing.Point(12, 158);
             this.dataGridViewBooks.Name = "dataGridViewBooks";
+            this.dataGridViewBooks.ReadOnly = true;
             this.dataGridViewBooks.RowHeadersWidth = 51;
             this.dataGridViewBooks.RowTemplate.Height = 24;
             this.dataGridViewBooks.Size = new System.Drawing.Size(772, 214);
@@ -189,6 +195,7 @@
             this.ptnameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.ptnameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ptnameDataGridViewTextBoxColumn.Name = "ptnameDataGridViewTextBoxColumn";
+            this.ptnameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ptmemIdDataGridViewTextBoxColumn
             // 
@@ -196,6 +203,7 @@
             this.ptmemIdDataGridViewTextBoxColumn.HeaderText = "Membership ID";
             this.ptmemIdDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ptmemIdDataGridViewTextBoxColumn.Name = "ptmemIdDataGridViewTextBoxColumn";
+            this.ptmemIdDataGridViewTextBoxColumn.ReadOnly = true;
             this.ptmemIdDataGridViewTextBoxColumn.Visible = false;
             // 
             // bktitleDataGridViewTextBoxColumn
@@ -204,6 +212,7 @@
             this.bktitleDataGridViewTextBoxColumn.HeaderText = "Book Title";
             this.bktitleDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bktitleDataGridViewTextBoxColumn.Name = "bktitleDataGridViewTextBoxColumn";
+            this.bktitleDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bkcheckoutdateDataGridViewTextBoxColumn
             // 
@@ -211,6 +220,7 @@
             this.bkcheckoutdateDataGridViewTextBoxColumn.HeaderText = "Checkout Date";
             this.bkcheckoutdateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bkcheckoutdateDataGridViewTextBoxColumn.Name = "bkcheckoutdateDataGridViewTextBoxColumn";
+            this.bkcheckoutdateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // due_date
             // 
@@ -218,6 +228,7 @@
             this.due_date.HeaderText = "Due Date";
             this.due_date.MinimumWidth = 6;
             this.due_date.Name = "due_date";
+            this.due_date.ReadOnly = true;
             // 
             // bkreturndateDataGridViewTextBoxColumn
             // 
@@ -225,6 +236,7 @@
             this.bkreturndateDataGridViewTextBoxColumn.HeaderText = "Return Date";
             this.bkreturndateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bkreturndateDataGridViewTextBoxColumn.Name = "bkreturndateDataGridViewTextBoxColumn";
+            this.bkreturndateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bk_is_overdue
             // 
@@ -232,6 +244,32 @@
             this.bk_is_overdue.HeaderText = "Overdue";
             this.bk_is_overdue.MinimumWidth = 6;
             this.bk_is_overdue.Name = "bk_is_overdue";
+            this.bk_is_overdue.ReadOnly = true;
+            // 
+            // cRBookBindingSource5
+            // 
+            this.cRBookBindingSource5.DataMember = "CRBook";
+            this.cRBookBindingSource5.DataSource = this.libraryManagementDataSetBindingSource;
+            // 
+            // libraryManagementDataSetBindingSource
+            // 
+            this.libraryManagementDataSetBindingSource.DataSource = this.libraryManagementDataSet;
+            this.libraryManagementDataSetBindingSource.Position = 0;
+            // 
+            // libraryManagementDataSet
+            // 
+            this.libraryManagementDataSet.DataSetName = "LibraryManagementDataSet";
+            this.libraryManagementDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cRBookBindingSource4
+            // 
+            this.cRBookBindingSource4.DataMember = "CRBook";
+            this.cRBookBindingSource4.DataSource = this.libraryManagementDataSet6;
+            // 
+            // libraryManagementDataSet6
+            // 
+            this.libraryManagementDataSet6.DataSetName = "LibraryManagementDataSet6";
+            this.libraryManagementDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // cRBookBindingSource3
             // 
@@ -248,23 +286,14 @@
             this.cRBookBindingSource.DataMember = "CRBook";
             this.cRBookBindingSource.DataSource = this.libraryManagementDataSetBindingSource;
             // 
-            // libraryManagementDataSetBindingSource
-            // 
-            this.libraryManagementDataSetBindingSource.DataSource = this.libraryManagementDataSet;
-            this.libraryManagementDataSetBindingSource.Position = 0;
-            // 
-            // libraryManagementDataSet
-            // 
-            this.libraryManagementDataSet.DataSetName = "LibraryManagementDataSet";
-            this.libraryManagementDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(238)))), ((int)(((byte)(98)))));
-            this.panel2.Controls.Add(this.txtRbDueDate);
+            this.panel2.Controls.Add(this.dateTimePicker3);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.btnRbCancel);
             this.panel2.Controls.Add(this.btnRbReturn);
+            this.panel2.Controls.Add(this.dateTimePicker2);
             this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtRbCheckOutDate);
@@ -275,13 +304,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(534, 219);
             this.panel2.TabIndex = 2;
-            // 
-            // txtRbDueDate
-            // 
-            this.txtRbDueDate.Location = new System.Drawing.Point(239, 99);
-            this.txtRbDueDate.Name = "txtRbDueDate";
-            this.txtRbDueDate.Size = new System.Drawing.Size(255, 22);
-            this.txtRbDueDate.TabIndex = 9;
             // 
             // label6
             // 
@@ -340,8 +362,10 @@
             // 
             // txtRbCheckOutDate
             // 
-            this.txtRbCheckOutDate.Location = new System.Drawing.Point(239, 60);
+            this.txtRbCheckOutDate.Enabled = false;
+            this.txtRbCheckOutDate.Location = new System.Drawing.Point(23, 185);
             this.txtRbCheckOutDate.Name = "txtRbCheckOutDate";
+            this.txtRbCheckOutDate.ReadOnly = true;
             this.txtRbCheckOutDate.Size = new System.Drawing.Size(255, 22);
             this.txtRbCheckOutDate.TabIndex = 3;
             // 
@@ -357,6 +381,7 @@
             // 
             // txtRbTitle
             // 
+            this.txtRbTitle.Enabled = false;
             this.txtRbTitle.Location = new System.Drawing.Point(239, 22);
             this.txtRbTitle.Name = "txtRbTitle";
             this.txtRbTitle.Size = new System.Drawing.Size(255, 22);
@@ -404,19 +429,24 @@
             // 
             this.cRBookTableAdapter2.ClearBeforeFill = true;
             // 
-            // libraryManagementDataSet6
-            // 
-            this.libraryManagementDataSet6.DataSetName = "LibraryManagementDataSet6";
-            this.libraryManagementDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cRBookBindingSource4
-            // 
-            this.cRBookBindingSource4.DataMember = "CRBook";
-            this.cRBookBindingSource4.DataSource = this.libraryManagementDataSet6;
-            // 
             // cRBookTableAdapter3
             // 
             this.cRBookTableAdapter3.ClearBeforeFill = true;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(239, 99);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(255, 22);
+            this.dateTimePicker2.TabIndex = 5;
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Enabled = false;
+            this.dateTimePicker3.Location = new System.Drawing.Point(239, 60);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(255, 22);
+            this.dateTimePicker3.TabIndex = 9;
             // 
             // ReturnBooks
             // 
@@ -439,19 +469,20 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBooks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSetBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryManagementDataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cRBookBindingSource4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -495,10 +526,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn due_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn bkreturndateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn bk_is_overdue;
-        private System.Windows.Forms.TextBox txtRbDueDate;
         private System.Windows.Forms.Label label6;
         private LibraryManagementDataSet6 libraryManagementDataSet6;
         private System.Windows.Forms.BindingSource cRBookBindingSource4;
         private LibraryManagementDataSet6TableAdapters.CRBookTableAdapter cRBookTableAdapter3;
+        private System.Windows.Forms.BindingSource cRBookBindingSource5;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
     }
 }

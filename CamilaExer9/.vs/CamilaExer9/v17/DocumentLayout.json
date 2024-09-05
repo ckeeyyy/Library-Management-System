@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|c:\\users\\acer\\exercisescksupremo\\lt_ojt_exer_1\\camilaexer9\\camilaexer9\\returnbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\returnbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\returnbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\returnbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\returnbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\checkoutbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\checkoutbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\checkoutbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\checkoutbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\viewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\viewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\viewpatrons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\viewpatrons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\addnewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\addnewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|c:\\users\\acer\\exercisescksupremo\\lt_ojt_exer_1\\camilaexer9\\camilaexer9\\bookdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\bookdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\checkoutbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\checkoutbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\viewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\viewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\addnewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\addnewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\returnbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\returnbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\bookdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -33,22 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\bookdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\bookdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\viewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\viewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\checkoutbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\checkoutbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\viewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|solutionrelative:camilaexer9\\viewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FA4F2CE-E6F3-4817-A2E4-52172829C026}|CamilaExer9\\CamilaExer9.csproj|C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\camilaexer9\\addpatron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -84,7 +84,7 @@
               "RelativeDocumentMoniker": "CamilaExer9\\ReturnBooks.cs",
               "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\ReturnBooks.cs",
               "RelativeToolTip": "CamilaExer9\\ReturnBooks.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAowFEAAAAAAAAA",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAAAHAAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T02:26:09.587Z",
               "IsPinned": true,
@@ -108,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "ReturnBooks.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\ReturnBooks.cs",
               "RelativeDocumentMoniker": "CamilaExer9\\ReturnBooks.cs",
@@ -120,20 +120,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ViewPatrons.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\ViewPatrons.cs",
-              "RelativeDocumentMoniker": "CamilaExer9\\ViewPatrons.cs",
-              "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\ViewPatrons.cs",
-              "RelativeToolTip": "CamilaExer9\\ViewPatrons.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAswHQAAAAVAAAA",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\Form1.cs",
+              "RelativeDocumentMoniker": "CamilaExer9\\Form1.cs",
+              "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\Form1.cs",
+              "RelativeToolTip": "CamilaExer9\\Form1.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T00:26:11.266Z",
+              "WhenOpened": "2024-08-27T02:06:04.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "CheckOutBooks.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\CheckOutBooks.cs",
+              "RelativeDocumentMoniker": "CamilaExer9\\CheckOutBooks.cs",
+              "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\CheckOutBooks.cs [Design]",
+              "RelativeToolTip": "CamilaExer9\\CheckOutBooks.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T03:04:01.929Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AddNewBooks.cs",
               "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\AddNewBooks.cs",
               "RelativeDocumentMoniker": "CamilaExer9\\AddNewBooks.cs",
@@ -146,45 +158,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\Form1.cs",
-              "RelativeDocumentMoniker": "CamilaExer9\\Form1.cs",
-              "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\Form1.cs",
-              "RelativeToolTip": "CamilaExer9\\Form1.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwGUAAAAJAAAA",
+              "DocumentIndex": 7,
+              "Title": "ViewBooks.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\ViewBooks.cs",
+              "RelativeDocumentMoniker": "CamilaExer9\\ViewBooks.cs",
+              "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\ViewBooks.cs [Design]",
+              "RelativeToolTip": "CamilaExer9\\ViewBooks.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T02:06:04.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T22:12:42.085Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "ViewBooks.cs",
               "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\ViewBooks.cs",
               "RelativeDocumentMoniker": "CamilaExer9\\ViewBooks.cs",
               "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\ViewBooks.cs",
               "RelativeToolTip": "CamilaExer9\\ViewBooks.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAYwCYAAAANAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAAD0AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T22:35:15.973Z"
+              "WhenOpened": "2024-08-27T22:35:15.973Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
+              "Title": "ViewPatrons.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\ViewPatrons.cs",
+              "RelativeDocumentMoniker": "CamilaExer9\\ViewPatrons.cs",
+              "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\ViewPatrons.cs",
+              "RelativeToolTip": "CamilaExer9\\ViewPatrons.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAawCoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T00:26:11.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CheckOutBooks.cs",
               "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\CheckOutBooks.cs",
               "RelativeDocumentMoniker": "CamilaExer9\\CheckOutBooks.cs",
               "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\CheckOutBooks.cs",
               "RelativeToolTip": "CamilaExer9\\CheckOutBooks.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPMAAAAAAAAA",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAowLkAAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T00:23:38.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "BookDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\BookDetails.cs",
+              "RelativeDocumentMoniker": "CamilaExer9\\BookDetails.cs",
+              "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\BookDetails.cs",
+              "RelativeToolTip": "CamilaExer9\\BookDetails.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA1wCUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T03:06:36.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\Form1.cs",
               "RelativeDocumentMoniker": "CamilaExer9\\Form1.cs",
@@ -196,19 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CheckOutBooks.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\CheckOutBooks.cs",
-              "RelativeDocumentMoniker": "CamilaExer9\\CheckOutBooks.cs",
-              "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\CheckOutBooks.cs [Design]",
-              "RelativeToolTip": "CamilaExer9\\CheckOutBooks.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T03:04:01.929Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "BookDetails.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\BookDetails.cs",
               "RelativeDocumentMoniker": "CamilaExer9\\BookDetails.cs",
@@ -217,30 +243,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T03:03:53.627Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ViewBooks.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\ViewBooks.cs",
-              "RelativeDocumentMoniker": "CamilaExer9\\ViewBooks.cs",
-              "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\ViewBooks.cs [Design]",
-              "RelativeToolTip": "CamilaExer9\\ViewBooks.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T22:12:42.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookDetails.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\BookDetails.cs",
-              "RelativeDocumentMoniker": "CamilaExer9\\BookDetails.cs",
-              "ToolTip": "C:\\Users\\Acer\\ExercisesCKSupremo\\LT_OJT_Exer_1\\CamilaExer9\\CamilaExer9\\BookDetails.cs",
-              "RelativeToolTip": "CamilaExer9\\BookDetails.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAuwCIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T03:06:36.557Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",

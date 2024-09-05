@@ -13,6 +13,7 @@ namespace CamilaExer9
 {
     public partial class BookDetails : Form
     {
+        private string ConnectionString = "data source = LAPTOP-7DELVKGD\\SQLEXPRESS; database = LibraryManagement;integrated security=True";
         public BookDetails()
         {
             InitializeComponent();
@@ -20,30 +21,32 @@ namespace CamilaExer9
 
         private void BookDetails_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'libraryManagementDataSet8.CRBook' table. You can move, or remove it, as needed.
-            this.cRBookTableAdapter3.Fill(this.libraryManagementDataSet8.CRBook);
-            // TODO: This line of code loads data into the 'libraryManagementDataSet7.CRBook' table. You can move, or remove it, as needed.
-            this.cRBookTableAdapter2.Fill(this.libraryManagementDataSet7.CRBook);
-            // TODO: This line of code loads data into the 'libraryManagementDataSet5.CRBook' table. You can move, or remove it, as needed.
-            this.cRBookTableAdapter1.Fill(this.libraryManagementDataSet5.CRBook);
-            // TODO: This line of code loads data into the 'libraryManagementDataSet.CRBook' table. You can move, or remove it, as needed.
-            this.cRBookTableAdapter.Fill(this.libraryManagementDataSet.CRBook);
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = LAPTOP-7DELVKGD\\SQLEXPRESS; database = LibraryManagement;integrated security=True";
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                con.Open();
 
-            cmd.CommandText = "Select * from CRBook where bk_return_date is null";
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            dataGridView1.DataSource = ds.Tables[0];
+                SqlCommand cmd = new SqlCommand("Select * from CRBook where bk_return_date is null", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                dataGridView1.DataSource = ds.Tables[0];
 
-            cmd.CommandText = "Select * from CRBook where bk_return_date is not null";
-            SqlDataAdapter da1 = new SqlDataAdapter(cmd);
-            DataSet ds1 = new DataSet();
-            da1.Fill(ds1);
-            dataGridView2.DataSource = ds1.Tables[0];
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    DateTime dueDate = Convert.ToDateTime(row.Cells[5].Value);
+
+                    if (DateTime.Today > dueDate)
+                    {
+                        row.DefaultCellStyle.ForeColor = Color.Red; // Highlight overdue books
+                    }
+                }
+
+                cmd.CommandText = "Select * from CRBook where bk_return_date is not null";
+                SqlDataAdapter da1 = new SqlDataAdapter(cmd);
+                DataSet ds1 = new DataSet();
+                da1.Fill(ds1);
+                dataGridView2.DataSource = ds1.Tables[0];
+            }
         }
     }
 }

@@ -26,22 +26,29 @@ namespace CamilaExer9
 
         private void dataGridViewPatrons_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridViewPatrons.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            try
             {
-                pMemID = Int64.Parse(dataGridViewPatrons.Rows[e.RowIndex].Cells[2].Value.ToString());
+                if (dataGridViewPatrons.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+                {
+                    pMemID = Int64.Parse(dataGridViewPatrons.Rows[e.RowIndex].Cells[2].Value.ToString());
+                }
+                panel2.Visible = true;
+
+                using (SqlConnection con = new SqlConnection("data source = LAPTOP-7DELVKGD\\SQLEXPRESS; database = LibraryManagement;integrated security=True"))
+                {
+                    SqlCommand cmd = new SqlCommand("Select * from NewPatron where pMemID = @pMemID", con);
+                    cmd.Parameters.AddWithValue("@pMemID", pMemID);
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds);
+
+                    txtVpName.Text = ds.Tables[0].Rows[0]["pName"].ToString();
+                    txtVpMemId.Text = ds.Tables[0].Rows[0]["pMemID"].ToString();
+                }
             }
-            panel2.Visible = true;
-
-            using (SqlConnection con = new SqlConnection("data source = LAPTOP-7DELVKGD\\SQLEXPRESS; database = LibraryManagement;integrated security=True"))
+            catch (Exception ex)
             {
-                SqlCommand cmd = new SqlCommand("Select * from NewPatron where pMemID = @pMemID", con);
-                cmd.Parameters.AddWithValue("@pMemID", pMemID);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-
-                txtVpName.Text = ds.Tables[0].Rows[0]["pName"].ToString();
-                txtVpMemId.Text = ds.Tables[0].Rows[0]["pMemID"].ToString();
+                return;
             }
         }
 

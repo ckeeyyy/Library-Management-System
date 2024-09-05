@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CamilaExer9
 {
@@ -14,6 +15,8 @@ namespace CamilaExer9
 
         private void CheckOutBooks_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'libraryManagementDataSet9.NewBook' table. You can move, or remove it, as needed.
+            this.newBookTableAdapter.Fill(this.libraryManagementDataSet9.NewBook);
             comboBoxBooks.Items.Clear();
 
             using (SqlConnection con = new SqlConnection("data source = LAPTOP-7DELVKGD\\SQLEXPRESS; database = LibraryManagement;integrated security=True"))
@@ -146,8 +149,9 @@ namespace CamilaExer9
                     Int64 memId = Convert.ToInt64(txtMemId.Text);
                     string bookTitle = comboBoxBooks.Text;
                     Int64 Isbn = Convert.ToInt64(txtCbISBN.Text);
-                    string bookCheckOutDate = dateTimePicker1.Text;
-                    string bookDueDate = dateTimePicker2.Text; // Get the return date from dateTimePicker2
+                    DateTime bookCheckOutDate = dateTimePicker1.Value;
+                    
+                    DateTime bookDueDate = dateTimePicker2.Value; // Get the return date from dateTimePicker2
 
                     int newQuantity = UpdateBookQuantity(bookTitle);
 
@@ -167,8 +171,9 @@ namespace CamilaExer9
 
                                 con.Open();
                                 cmd.ExecuteNonQuery();
-
                                 MessageBox.Show("Book Checked Out", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
                             }
                             catch (Exception ex)
                             {
@@ -178,7 +183,7 @@ namespace CamilaExer9
                     }
                     else
                     {
-                        MessageBox.Show("The selected book is out of stock.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("The selected book is out of stock.", "Out of Stock", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else
@@ -236,7 +241,8 @@ namespace CamilaExer9
             {
                 txtCbName.Clear();
                 txtMemId.Clear();
-                comboBoxBooks.Items.Clear();
+                comboBoxBooks.SelectedIndex = -1;
+                txtCbISBN.Clear();
             }
         }
     }
